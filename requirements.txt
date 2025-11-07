@@ -1,2 +1,2 @@
-python-telegram-bot==20.8
-imghdr-pure
+build:
+  pythonVersion: 3.10.14 
