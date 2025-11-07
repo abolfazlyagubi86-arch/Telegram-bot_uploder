@@ -160,15 +160,8 @@ async def main():
 
     bot = Bot(BOT_TOKEN)
     asyncio.create_task(scheduler(bot))
-
     print("🤖 ربات فعال شد و آماده است...")
-
-    # ✅ نسخه سازگار با python-telegram-bot 21.3
-    await app.initialize()
-    await app.start()
-    await app.updater.start_polling()
-    await app.updater.idle()
-
+    await app.run_polling()
 
 if __name__ == "__main__":
-    asyncio.run(main()) 
+    asyncio.run(main())
